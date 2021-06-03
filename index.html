@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="icon" href="https://i.imgur.com/DS7LUj3.png" type="image/png" sizes="16x16">
+    <title>Calculadora Virtual - ADS_RWD21</title>
+</head>
+<body>
+    <div class="fundo">
+        <div class="calculadora">
+            <div id="calculadora-visor">
+                <input type="text" value="" id="tela-visor" disabled>
+            </div>
+            <div class="botaoNumerico">
+                <input type="submit" value="C" onclick="limpar();" style="left: 40px; top: 96px;" id="botao-limpar">
+                <input type="submit" value="7" onclick="unir(7);" style="left: 33px; top: 117px;">
+                <input type="submit" value="8" onclick="unir(8);" style="left: 94px; top: 117px;">
+                <input type="submit" value="9" onclick="unir(9);" style="left: 155px; top: 117px;">
+                <input type="submit" value="÷" onclick="unir('/');" style= "left: 216px; top: 117px;">
+                <input type="submit" value="4" onclick="unir(4);" style="left: 33px; top: 183px;">
+                <input type="submit" value="5" onclick="unir(5);" style="left: 94px; top: 183px;">
+                <input type="submit" value="6" onclick="unir(6);" style="left: 155px; top: 183px;">
+                <input type="submit" value="x" onclick="unir('*');" style="left: 216px; top: 183px;">
+                <input type="submit" value="1" onclick="unir(1);" style="left: 33px; top: 249px;">
+                <input type="submit" value="2" onclick="unir(2);" style="left: 94px; top: 249px;">
+                <input type="submit" value="3" onclick="unir(3);" style="left: 155px; top: 249px;">
+                <input type="submit" value="-" onclick="unir('-');" style="left: 216px; top: 249px;">
+                <input type="submit" value="0" onclick="unir(0);" style="left: 33px; top: 315px;">
+                <input type="submit" value="." onclick="unir('.');" style="left: 94px; top: 315px;">
+                <input type="submit" value="+" onclick="unir('+');" style="left: 155px; top: 315px;">
+                <input type="submit" value="=" onclick="calcular();" style="left: 216px; top: 315px;" id="botao-igual">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
